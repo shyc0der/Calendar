@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/day"
+    android:textColor="@android:color/black"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"
+    />
+    <CalendarView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/calendar"
+    android:layout_below="@+id/day"
+        >
+
+</CalendarView>
+<view class="android.support.v7.app.AlertController$RecycleListView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/recyclee"
+    android:layout_below="@+id/calendar"
+    >
+
+</view>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    >
+    <Button
+        android:id="@+id/addq"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        />
+    <Button
+        android:id="@+id/editq"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        />
+    <Button
+        android:id="@+id/deleteq"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        />
+
+</LinearLayout>
+</RelativeLayout>
